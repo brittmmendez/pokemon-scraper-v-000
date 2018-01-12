@@ -9,7 +9,7 @@ def initialize(id:nil, name:, type:, db:)
   @db=db
 end
 
-def save
+def self.save
   sql=<<-SQL
   INSERT INTO pokemon (name, type) VALUES (?,?)
   SQL
